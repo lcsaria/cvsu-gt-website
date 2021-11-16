@@ -60,6 +60,14 @@ function Sidebar() {
             </div>
             </div>
           </a>
+          <a className={isExpanded ?"nav-link": "nav-link mt-3"} href="/upload-record">  
+          <div className="sidebar-items">
+            <div className="item">
+              <i className="fas fa-paperclip mr-4"/>
+              <span className="sidebar-text">Upload Record</span>
+            </div>
+            </div>
+          </a>
           <a className={isExpanded ?"nav-link": "nav-link mt-3"} href="/dashboard">  
           <div className="sidebar-items">
             <div className="item">
@@ -90,6 +98,21 @@ function Sidebar() {
               <div className="item">
                 <i className="fas fa-home mr-4"/>
                 <span className="sidebar-text">Home</span>
+              </div>
+              </div>
+            </a>
+            </OverlayTrigger>
+            <OverlayTrigger 
+                  placement="right"
+                  overlay={
+                    <Tooltip>Home</Tooltip>
+                  }
+            >
+            <a className={isExpanded ?"nav-link": "nav-link mt-3"} href="/dashboard">  
+            <div className="sidebar-items">
+              <div className="item">
+                <i className="fas fa-paperclip mr-4"/>
+                <span className="sidebar-text">Upload Record</span>
               </div>
               </div>
             </a>
