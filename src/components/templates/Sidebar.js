@@ -68,7 +68,7 @@ function Sidebar() {
             </div>
             </div>
           </a>
-          <a className={isExpanded ?"nav-link": "nav-link mt-3"} href="/dashboard">  
+          <a className={isExpanded ?"nav-link": "nav-link mt-3"} href="/manage-record">  
           <div className="sidebar-items">
             <div className="item">
               <i className="fas fa-users mr-4"/>
@@ -123,7 +123,7 @@ function Sidebar() {
                     <Tooltip>Home</Tooltip>
                   }
             >
-            <a className={isExpanded ?"nav-link": "nav-link mt-3"} href="/dashboard">  
+            <a className={isExpanded ?"nav-link": "nav-link mt-3"} href="/manage-record">  
             <div className="sidebar-items">
               <div className="item">
                 <i className="fas fa-users mr-4"/>
