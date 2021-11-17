@@ -23,8 +23,32 @@ function UploadRecord() {
                   width: '200px'}}>
                     <b className="text-uppercase text-dark">Upload Record</b>
                   </span>
+                  <div className="ml-5 p-2">
+                    <div className="">
+                      <div className="mb-4">
+                        <label for="formGroupExampleInput" className="form-label ">FILE NAME</label>
+                        <input type="text" class="form-control" id="formGroupExampleInput" placeholder="File Name"/>
+                      </div>
+                      <div className="mb-4">
+                        <label for="formGroupExampleInput" className="form-label">FILE TYPE</label>
+                        <select class="form-select" aria-label="Default select example">
+                          <option selected>---</option>
+                          <option value="1">Memo</option>
+                          <option value="2">File</option>
+                          <option value="3">Resolution</option>
+                        </select>
+                      </div>
+                      <div class="mb-4">
+                          <label for="formFile" class="form-label">ATTACHMENT</label>
+                          <input class="form-control" type="file" id="formFile"/>
+                        </div>
+                        <div class="d-grid gap-2 mb-3">
+                          <button class="btn btn-success" type="button">SUBMIT</button>
+                        </div>
+                  </div>
+                </div>
               </div>
-              </div>
+             </div>
             </div>
           </div>
           <Footer/>
