@@ -21,7 +21,7 @@ function UploadRecord() {
                   style={{position: "relative", top: "-30px",  border: 
                   "1px black solid",display: 'block',
                   width: '200px'}}>
-                    <b className="text-uppercase text-dark">Upload Record</b>
+                    <b className="text-uppercase text-dark">Upload Files</b>
                   </span>
                   <div className="ml-5 p-2">
                     <div className="">
@@ -37,6 +37,10 @@ function UploadRecord() {
                           <option value="2">File</option>
                           <option value="3">Resolution</option>
                         </select>
+                      </div>
+                      <div className="mb-4">
+                        <label for="formGroupExampleInput" className="form-label ">AUTHOR</label>
+                        <input type="text" class="form-control" id="formGroupExampleInput" placeholder="File Name" disabled/>
                       </div>
                       <div class="mb-4">
                           <label for="formFile" class="form-label">ATTACHMENT</label>

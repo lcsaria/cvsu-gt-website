@@ -29,20 +29,37 @@ function ManageRecord() {
                       <tr>
                         <th scope="col">File Number</th>
                         <th scope="col">Name</th>
-                        <th scope="col">Author</th>
                         <th scope="col">Type</th>
+                        <th scope="col">Author</th>
                         <th scope="col">Created by</th>
                         <th scope="col">Updated by</th>
+                        <th scope="col">Action</th>
                       </tr>
                     </thead>
                     <tbody>
                       <tr>
                         <th scope="row">1</th>
                         <td>Memo no. 1</td>
-                        <td>LBPascua</td>
                         <td>Memo</td>
+                        <td>LBPascua</td>
                         <td>01/01/21 10:00AM</td>
                         <td>01/01/21 10:00AM</td>
+                        <td>
+                          <a href="/manage-record" ><i className="fas fa-users mr-4"/></a>
+                          <i className="fas fa-trash mr-4"/>
+                        </td>
+                      </tr>
+                      <tr>
+                      <th scope="row">1</th>
+                        <td>Memo no. 1</td>
+                        <td>Memo</td>
+                        <td>LBPascua</td>
+                        <td>01/01/21 10:00AM</td>
+                        <td>01/01/21 10:00AM</td>
+                        <td>
+                          <a href="/manage-record" ><i className="fas fa-users mr-4"/></a>
+                          <i className="fas fa-trash mr-4"/>
+                        </td>
                       </tr>
                     </tbody>
                   </table>
