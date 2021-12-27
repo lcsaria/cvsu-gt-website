@@ -21,7 +21,7 @@ function ManageRecord() {
                   style={{position: "relative", top: "-30px",  border: 
                   "1px black solid",display: 'block',
                   width: '200px'}}>
-                    <b className="text-uppercase text-dark">Manage User</b>
+                    <b className="text-uppercase text-dark">Manage Record</b>
                   </span>
         <div className="row">
           <div className="col-md-6 text-nowrap">

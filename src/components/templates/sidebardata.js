@@ -16,5 +16,10 @@ export const Sidebardata = [
         icon : <i className="fas fa-table"/>,
         link : '/manage-record',
     },
+    {
+        title : 'Manage User',
+        icon : <i className="fas fa-users"/>,
+        link : '/manage-user',
+    },
 ]
 

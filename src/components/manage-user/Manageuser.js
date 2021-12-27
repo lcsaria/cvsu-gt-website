@@ -1,10 +1,9 @@
 import React from 'react'
-import Stats from '../templates/Stats'
 import Footer from '../templates/Footer'
 import Navbar from '../templates/Navbar'
 import Sidebar from '../templates/Sidebar'
 
-function Dashboard() {
+function ManageUser() {
 
     return (
       <div id="wrapper">
@@ -17,24 +16,13 @@ function Dashboard() {
             </div>
             <div className="container">
               
-            <div className="card mb-4 d-block">
-              <div className="card-body">
-                  <span className="card-title card text-center p-2"
-                  style={{position: "relative", top: "-30px",  border: 
-                  "1px black solid",display: 'block',
-                  width: '250px'}}>
-                    <b className="text-uppercase text-dark">Basic Information</b>
-                  </span>
-                  <Stats/>
-              </div>
-              </div>
               <div className="card mb-1 d-block">
               <div className="card-body">
               <span className="card-title card text-center p-2"
                   style={{position: "relative", top: "-30px",  border: 
                   "1px black solid",display: 'block',
                   width: '250px'}}>
-                    <b className="text-uppercase text-dark">Access your record</b>
+                    <b className="text-uppercase text-dark">Manage User</b>
                   </span>
                   <div className="row">
                     <div className="col-md-6 text-nowrap">
@@ -105,5 +93,5 @@ function Dashboard() {
     )
 }
 
-export default Dashboard
+export default ManageUser
 
