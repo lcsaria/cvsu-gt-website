@@ -61,18 +61,20 @@ function ManageUser() {
                       <table className="table my-0" id="dataTable">
                         <thead>
                         <tr>
-                          <th scope="col">File Number</th>
+                          <th scope="col">ID</th>
                             <th scope="col">Name</th>
-                            <th scope="col">Author</th>
                             <th scope="col">Type</th>
+                            <th scope="col">Date Created</th>
+                            <th scope="col">Date Updated</th>
                             <th scope="col">Action</th>
                           </tr>
                         </thead>
                         <tbody>
                         <th scope="row">1</th>
-                                  <td>Memo no. 1</td>
                                   <td>LBPascua</td>
-                                  <td>Memo</td>
+                                  <td>Admin</td>
+                                  <td>01/01/21 10:00AM</td>
+                                  <td>01/01/21 10:00AM</td>
                                   <td>
                                     <a href="/manage-record" ><i className="fas fa-users mr-4"/></a>
                                     <i className="fas fa-trash mr-4"/>
