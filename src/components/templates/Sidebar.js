@@ -6,8 +6,12 @@ import { OverlayTrigger, Tooltip } from 'react-bootstrap';
 
 
 const Sidebar = () => {
-    const [ showNav, setShowNav] = useState(true)
+    const [ showNav, setShowNav] = useState(localStorage.getItem('nav') || true)
 
+    const setNav = () => {
+        setShowNav(!showNav)
+        localStorage.setItem('nav', !showNav);
+    }
     return (
         <div className={showNav ? "sidebars d-none d-lg-block" : "sidebars collapsed d-none d-lg-block"}>
             <ul className="sidebarlist">
@@ -18,15 +22,14 @@ const Sidebar = () => {
                         <div className="col-10">
                             <img className="sidebar-logo ml-2" src={logo} alt="logo"/>  
                         </div>
-                        <div className="col-2" onClick={() => {setShowNav(!showNav)}}>
+                        <div className="col-2" onClick={setNav}>
                             <i className="fas fa-bars sidebar-icon" />
                         </div>
                         </> :
                         <>
-                            <div className="text-center" onClick={() => {setShowNav(!showNav)}}>
+                            <div className="text-center" onClick={setNav}>
                                 <i className="fas fa-bars " />
-                            </div>
-                            
+                            </div>  
                         </>
                     }
                 </div>

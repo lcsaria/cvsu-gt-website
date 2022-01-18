@@ -1,52 +1,26 @@
 import React from 'react'
-import { useHistory } from 'react-router'
-
-import logo from '../../assets/school-logo-small.png'
+import Header from '../templates/Header'
+import bg from './../../assets/cvsu-building.jpg'
+import Navbars from '../templates/Navbar'
 
 function Home() {
-    const history = useHistory();
 
-    const sumbit = () => {
-        localStorage.setItem("isAuthenticated", true)
-        history.push("/dashboard");
-    }
-
-    const register = () => {
-        history.push("/register");
-    }
     return (
         <div className="maincontainer">
-        <div className="container-fluid">
-            <div className="row no-gutter">
-            <div className="col-md-6 d-none d-md-flex bg-image"></div>
-                <div className="col-md-6 bg-light">
-                    <div className="login d-flex align-items-center py-5">
-                        <div className="container">
-                            <div className="row">
-                                <div className="col-lg-10 col-xl-7 mx-auto">
-                                    <img className="center" src={logo} alt="logo"/>
-                                    <h4 className="display-5 text-center">CvSU - General Trias</h4>
-                                    <p className="text-muted text-center">RECORD MANAGEMENT SYSTEM</p>
-                                    <form onSubmit={sumbit}>
-                                        <div className="mb-3">
-                                            <input id="inputStudentNumber" type="text" placeholder="Username" required="" autoFocus="" className="form-control  border-0 shadow-sm px-4" />
-                                        </div>
-                                        <div className="mb-3">
-                                            <input id="inputPassword" type="password" placeholder="Password" required="" className="form-control  border-0 shadow-sm px-4 text-primary" />
-                                        </div>
-                                        <div className="d-grid gap-2 mt-2">
-                                        <button type="submit" className="btn btn-success btn-block text-uppercase mb-2  shadow-sm">Sign in</button>
-                                        <button onClick={register} className="btn btn-dark btn-block text-uppercase mb-2  shadow-sm">Register</button>
-                                        </div>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-            </div>
+         <header class="masthead" style={{ 
+            backgroundImage:`url(${bg})`,
+            backgroundSize: `100% 140%` }}>
+            <Navbars/>
+        <div class="p-5 text-center mb-3">
+            <h1 className="text-dark"><a href="https://cvsu.edu.ph/"
+            rel="home" className='text-dark text-uppercase'>Cavite State University</a></h1>
+            <p class="text-light">Truth Excellence Service</p>
+            <Header/>
         </div>
+            </header>
+        {/* BODY */}
+        
+        
       </div>
     )
 }

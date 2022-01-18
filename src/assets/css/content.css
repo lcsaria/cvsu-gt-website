@@ -53,3 +53,11 @@ table{
 .card-title{
     background-color: #a5d6a7;
 }
+
+.cvsu-bg{
+    background-image: 'url("assets/cvsu-building.jpg")' 
+}
+
+body {
+    font-family: "Oswald";
+}
