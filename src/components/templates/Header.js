@@ -11,8 +11,8 @@ function Header() {
     <div className="fixed">
         <div className="container">
         <div className="row">
-            <div className="col-lg-8 mx-auto">
-            <h1 className="brand-heading" style={{ fontSize: 72 }}>
+            <div className="p-5">
+            <h1 className="brand-heading">
                 CvSU-General Trias
             </h1>
             <p className="intro-text">
@@ -20,9 +20,6 @@ function Header() {
                 the heart of Cavite.
                 <br />
             </p>
-            <a className="btn btn-link btn-circle" role="button" href="#about">
-                <i className="fa fa-angle-double-down animated" />
-            </a>
             </div>
         </div>
         </div>
