@@ -101,11 +101,6 @@ h1 {
     color: #9de4a0;
 }
 
-@media (max-width: 550px) {
-    h1 { font-size: 24px;}
-    p { font-size: 10px; }
-}
-
 video {
     max-width: 100%;
     width: 100%;
@@ -117,3 +112,11 @@ video {
     height:100vh;
   }
   
+  .dropdown-menu {
+    right: 0;
+    left: auto;
+}
+
+.navBG{
+    background-color: #C8E6C9;
+}

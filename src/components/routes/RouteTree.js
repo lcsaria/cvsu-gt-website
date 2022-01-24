@@ -1,5 +1,7 @@
 import React from 'react'
 import { Route, Switch } from 'react-router'
+import ContactInformation from '../about/ContactInformation.js'
+import VisionMissionGoals from '../about/VisionMissionGoals.js'
 import Home from "../home/Home.js"
 
 
@@ -9,6 +11,8 @@ function RouteTree() {
             <Switch>
                 <Route exact path="/" component={Home}/>
                 <Route exact path="/login" component={Home}/>
+                <Route exact path="/vision-mission-goals" component={VisionMissionGoals}/>
+                <Route exact path="/contact-information" component={ContactInformation}/>
             </Switch>
         </div>
     )
