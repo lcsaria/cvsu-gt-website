@@ -56,7 +56,9 @@ const Navbars = () => {
               <Nav.Link href="/"><span><i className="fas fa-clipboard mr-3"/>INSTRUCTION</span></Nav.Link>
               <Nav.Link href="/"><span><i className="fas fa-cog mr-3"/>SERVICES</span></Nav.Link>
               <NavDropdown title={navAbout} id="basic-nav-dropdown">
+              <NavDropdown.Item  flip href="#">CAMPUS HISTORY</NavDropdown.Item>
                 <NavDropdown.Item  flip href="/vision-mission-goals">VISION, MISSION, AND GOALS</NavDropdown.Item>
+                <NavDropdown.Item  flip href="/university-seal">UNIVERSITY SEAL AND HYMN</NavDropdown.Item>
                 <NavDropdown.Item  flip href="/contact-information">CONTACT INFORMATION</NavDropdown.Item>
               </NavDropdown>
             </Nav>

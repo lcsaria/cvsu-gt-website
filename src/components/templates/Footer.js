@@ -4,9 +4,9 @@ import { Container } from 'react-bootstrap'
 import gov from '../../assets/gov.png'
 function Footer() {
     return (
-        <footer className="bg-dark sticky-footer  mt-4" 
+        <footer className="bg-footer sticky-footer  mt-4" 
         style={{ boxShadow: "0px 4px 5px"}}>
-          <div class="subfooter">
+          <div class="sticky-bottom">
             <Container>
               <div class="row">
               <div class="col-sm-3">
@@ -33,14 +33,14 @@ function Footer() {
                   <span class="text-bold mt-3">CONTACT US</span>
                    <li class="list-group mt-3">
                      <p className='text-light'>
-                      Town Proper, Vibora, General Trias Cavite
-                      Phone: (046) 437-0693
+                     <i class="fas fa-map-marker-alt mr-3"/>Town Proper, Vibora, Gen. Trias, Cavite<br/>
+                      <i class="fas fa-phone mr-3"/>(046) 437-0693<br/>
                     </p>
                   </li> 
                 </div>
                 <div class="col-sm-3 mt-3">
                 <span class="text-bold">FOLLOW US</span>
-                <ul class="list-group">
+                <ul class="list-group mt-3">
                   <li class="list-group p-2">
                     <a href="https://www.facebook.com/CvSUgeneraltrias2012" target="_blank" rel="noreferrer" className="fa fa-facebook link-light text-decoration-none" />
                   </li>

@@ -12,7 +12,8 @@ function Content() {
             <Navbars/>
         {/* BODY */}
         <Container className="p-3">
-             {/* CONTENT */}
+            <h3 class="text-uppercase fw-bolder">University Seal And Hymn</h3>
+            <h5>University Seal</h5>
        </Container>
        <Footer/>
       </div>

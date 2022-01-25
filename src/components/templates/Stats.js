@@ -4,9 +4,9 @@ import AnimatedNumber from 'react-animated-number';
 function Stats() {
     return (
         <div>
-            <div class="row row-cols-1 row-cols-md-2 g-4 text-center">
-                <div class="col-sm-3">
-                    <div class="card">
+            <div class="row text-center">
+                <div class="col-sm">
+                <div class="card">
                     <div class="card-body">
                         <h5>STUDENTS</h5>
                         <AnimatedNumber component="text" value={1975}
@@ -16,15 +16,12 @@ function Stats() {
                             transitionProperty:
                                 'background-color, color, opacity'
                         }}
-                        frameStyle={perc => (
-                            perc === 100 ? {} : {backgroundColor: '#ffeb3b'}
-                        )}
                         duration={1000}
                         stepPrecision={0}/>
                     </div>
                     </div>
                 </div>
-                <div class="col-sm-3">
+                <div class="col-sm">
                     <div class="card">
                     <div class="card-body">
                         <h5>FACULTY</h5>
@@ -35,16 +32,13 @@ function Stats() {
                             transitionProperty:
                                 'background-color, color, opacity'
                         }}
-                        frameStyle={perc => (
-                            perc === 100 ? {} : {backgroundColor: '#ffeb3b'}
-                        )}
                         duration={2000}
                         stepPrecision={0}/>
                     </div>
                     </div>
                 </div>
-                <div class="col-sm-3">
-                    <div class="card">
+                <div class="col-sm">
+                <div class="card">
                     <div class="card-body">
                         <h5>STAFF</h5>
                         <AnimatedNumber component="text" value={5}
@@ -54,16 +48,13 @@ function Stats() {
                             transitionProperty:
                                 'background-color, color, opacity'
                         }}
-                        frameStyle={perc => (
-                            perc === 100 ? {} : {backgroundColor: '#ffeb3b'}
-                        )}
                         duration={2000}
                         stepPrecision={0}/>
                     </div>
                     </div>
                 </div>
-                <div class="col-sm-3">
-                    <div class="card">
+                <div class="col-sm">
+                <div class="card">
                     <div class="card-body">
                         <h5>COURSE</h5>
                         <AnimatedNumber component="text" value={7}
@@ -73,16 +64,12 @@ function Stats() {
                             transitionProperty:
                                 'background-color, color, opacity'
                         }}
-                        frameStyle={perc => (
-                            perc === 100 ? {} : {backgroundColor: '#ffeb3b'}
-                        )}
                         duration={3000}
                         stepPrecision={0}/>
                     </div>
                     </div>
                 </div>
-                </div>
-                
+            </div>
                 </div>
     )
 }
