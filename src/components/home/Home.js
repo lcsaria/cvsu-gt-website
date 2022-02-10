@@ -25,10 +25,10 @@ function Home() {
 
         {/* BODY */}
         <Container>
-        <div class="text-center mt-4">
-                <video class="border border-1" src={video1} controls="controls"/>
+        <div class="text-center mt-5 mb-5">
+                <video  src={video1} controls="controls"/>
         </div>
-        <div>
+        <div class="mt-5 mb-5">
             <Stats/>
         </div>
        </Container>
